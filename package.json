@@ -1,0 +1,32 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "Javascript / Typescript Solutions of Leetcode Problems",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pro-algorithm/leetcode.git"
+  },
+  "keywords": [
+    "algorithms",
+    "leetcode"
+  ],
+  "author": "Olga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pro-algorithm/leetcode/issues"
+  },
+  "homepage": "https://github.com/pro-algorithm/leetcode#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "jest": "^28.1.1",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "typescript": "^4.7.3"
+  }
+}
