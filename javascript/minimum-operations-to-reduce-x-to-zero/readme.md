@@ -33,11 +33,11 @@ Explanation: Оптимальное решение — удалить после
 
 **Ограничения:**
 
-```jsx
-1 <= nums.length <= 105;
-1 <= nums[i] <= 104;
-1 <= x <= 109;
-```
+1 <= `nums.length` <= 10<sup>5</sup>;
+
+1 <= `nums[i]` <= 10<sup>4</sup>;
+
+1 <= `x` <= 10<sup>9</sup>;
 
 <details>
 
