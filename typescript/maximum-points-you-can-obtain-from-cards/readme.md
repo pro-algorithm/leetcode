@@ -68,22 +68,22 @@ Explanation: You have to take all the cards. Your score is the sum of points of 
 
 Найдём сумму первых k карт:
 
-```js
-let curSum = 0;
-for (let i = 0; i < k; i++) {
+```ts
+let curSum: number = 0;
+for (let i: number = 0; i < k; i++) {
   curSum += cardPoints[i];
 }
 ```
 
 Добавим переменную для хранения максимальной суммы k карт:
 
-```js
-let maxSum = curSum;
+```ts
+let maxSum: number = curSum;
 ```
 
 В цикле уменьшаем на одну карту слева и добавляем одну карту справа. Сравниваем с текущим максимумом. По окончании цикла возвращаем максимальное значение
 
-```js
+```ts
 for (let i = k - 1; i >= 0; i--) {
   const j = cardPoints.length - k + i;
   curSum = curSum - cardPoints[i] + cardPoints[j];
@@ -93,18 +93,18 @@ for (let i = k - 1; i >= 0; i--) {
 
 Весь алгоритм выглядит так:
 
-```js
+```ts
 /**
  * @param {number[]} cardPoints
  * @param {number} k
  * @return {number}
  */
-const maxScore = function (cardPoints, k) {
-  let curSum = 0;
-  for (let i = 0; i < k; i++) {
+const maxScore = function (cardPoints: number[], k: number): number {
+  let curSum: number = 0;
+  for (let i: number = 0; i < k; i++) {
     curSum += cardPoints[i];
   }
-  let maxSum = curSum;
+  let maxSum: number = curSum;
   for (let i = k - 1; i >= 0; i--) {
     const j = cardPoints.length - k + i;
     curSum = curSum - cardPoints[i] + cardPoints[j];
